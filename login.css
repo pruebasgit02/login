@@ -1,0 +1,95 @@
+form .txt-field{
+position: relative;
+border-bottom: 2px solid #adadad;
+margin:30px 0;
+}
+
+.txt-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt-field input:focus{
+    box-shadow: none !important;
+}
+
+ .txt-field label{
+    color: #2691d9 !important;
+    top:-5px;
+}
+
+.txt-field span::before{
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: -webkit-linear-gradient(to right, #086eac, #7ae0f6);
+    background: linear-gradient(to right, #086eac, #7ae0f6);
+    transition: .5s;
+
+} 
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+    top:-5px;
+    color: #2691d9 !important;
+
+}
+
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width: 100%;
+
+}
+
+
+.boton{
+    width:150px;
+    height: 45px;
+    border-radius: 25px;
+    background-image: linear-gradient(to left,  #6fdaf2, #086eac);
+    background-size: 300%;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.6s;
+    border:none
+
+}
+
+.boton:hover{   
+    background-position: right !important;
+    color : #fff !important;
+}
+
+#archivo{
+    display: none;
+}
+.carga-imagen label{
+    display:block;
+    padding:  20px 0 20px 10px;
+    border-bottom:2px solid #adadad;
+    cursor: pointer;
+    color: #2691d9 !important;
+}
+
+.borde-select,
+.borde-select:hover,
+.borde-select:focus{
+    border: none;
+    box-shadow: none;
+    
+}
+.seleccion-zona label{
+    font-size: 18px;
+}
+.img-movimiento{
+    width: 300px;
+}
